@@ -123,8 +123,7 @@ var score = 0;
   }
 
   // Event listener to start the quiz
-  startBtn.addEventListener("click", (e) => {
-    e.preventDefault()
+  startBtn.addEventListener("click", () => {
     startScreen.classList.add("hide");
     questionsScreen.classList.remove("hide");
     showQuestion();
@@ -133,6 +132,6 @@ var score = 0;
 
   // Event listener to submit the score
   submitBtn.addEventListener("click", (e) => {
-    e.preventDefault()
-    saveScore()
+    e.preventDefault();
+    saveScore();
   });
